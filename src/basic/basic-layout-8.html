@@ -6,13 +6,41 @@
     <title>Basic Layout 8</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body{
+        margin: 0 auto;
+        max-width: 20em;
+        gap: 0.25em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.35fr 1fr;
+        grid-template-areas: 
+        /* naar rechts = column, naar beneden = row */
+        'header header header'
+        'nav main footer'
+        'nav main footer'
+      }
+
+      header{
+        grid-area: header;
+      }
+
+      nav{
+        grid-area: nav;
+      }
+
+      main{
+        grid-area: main;
+      }
+
+      footer{
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-8">
     <header><h1>Basic Layout 8</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <main>Main</main>
+    <footer>Footer</footer>
   </body>
 </html>
